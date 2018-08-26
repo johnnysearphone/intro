@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Intro</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <!---->
+    
+ 
+  <!-- -->
+  <ul>
+    <!--Intro to ! is shown as browser corrects the  intro/welcome tab but does not display spaceshipp due to passing declaration fail-->
+    <li><intro productName="SpaceShipApp"></welcome></li>
+    
+    <!-- nothing displayed as no string passed and nothing called-->
+      <li><intro></intro></li>
+
+  <!-- unsure as to how names are passed as input (think name has to be defined somewhere anyway)   -->
+ <li><intro [productName]="{{ name }}"></intro></li>
+
+ <li><intro [productName]="name"></intro></li>
+
+ <li><intro productName=" 'name' "></intro></li>
+
+ <li><intro productName="{{'name'}}"></intro></li>
+ 
+ <li><intro (productName)="name"></intro></li>
+</ul>
+  <!--<app-root></app-root>-->
+</body>
+</html>
